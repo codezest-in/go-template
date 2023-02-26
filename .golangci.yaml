@@ -1,0 +1,19 @@
+run:
+  timeout: 5m
+  modules-download-mode: readonly
+
+linters:
+  # Check https://golangci-lint.run/usage/linters/ for the list of linters enabled by default.
+  enable:
+    - gofmt
+    - lll
+
+linters-settings:
+  lll:
+    line-length: 100
+    tab-width: 1
+
+issues:
+  exclude-use-default: false
+  max-issues-per-linter: 0
+  max-same-issues: 0

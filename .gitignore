@@ -13,3 +13,12 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# macOS directories
+.DS_Store
+
+# gRPC + protobuf generated code
+*.pb.go
+
+# Output directory
+out/
