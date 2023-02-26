@@ -1,11 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"go-template/pkg/example"
+)
 
 func main() {
-	fmt.Println(Greet())
-}
-
-func Greet() string {
-	return "Hello!"
+	fmt.Println(example.Greet())
 }
