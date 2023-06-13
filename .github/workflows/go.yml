@@ -18,7 +18,10 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v3
         with:
-          go-version: 1.19
+          go-version-file: go.mod
+
+      - name: Verify
+        uses: pre-commit/action@v3.0.0
 
       - name: Build
         run: make build
